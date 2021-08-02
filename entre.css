@@ -1,0 +1,203 @@
+.principal{
+    display: flex;
+    flex-direction: row;
+
+}
+.formulario-total{
+    height: 485px;
+    width: 370px;
+    background-color: #f1910f;
+    position: absolute;
+    left: 840px;
+    top: 32px;
+    border-radius: 10px;
+}
+
+
+.formulario{
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group h2{
+    color: #ffffff; 
+    font-family: "Avenir Black", Sans-serif;
+}
+
+#nombre{
+    margin-top: 10px;
+    width: 155px;
+}
+
+#apellido{
+    margin-top: 10px;
+    width:155px ;
+    margin-left: 18px;
+}
+
+#role{
+    margin-top: 10px;
+    width: 140px;
+}
+
+#email{
+    margin-top: 10px;
+}
+
+
+#number{
+    margin-top: 10px;
+    width: 172px;
+    margin-left: 18px;
+}
+
+#phone{
+    margin-top: 10px;
+}
+
+#role{
+    margin-top: 10px;
+}
+
+#role-1{
+    margin-top: 24px;
+}
+
+.form-group .form-control {
+    border-radius: 19px ;
+    background-color: #f1910f;    
+    color:#ffffff;
+        
+}
+
+
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #AB1926 ;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: gray;
+}
+
+
+#intencion{
+    display: inline-block;
+    background-color: #AB1926;
+    color:#ffffff;
+    position: absolute;
+    padding: 0.75rem;
+    width: 180px;
+    left: 240px;
+    border:none;
+    top: 380px;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: gray;
+}
+
+#espacio{
+    position: absolute;
+    top: 340px;
+    left: 120px;
+    background-color: #f1910f;
+    height: 8px;
+    width: 480px;
+    border-radius: 5px;
+}
+
+#intencion-1{
+    display: inline-block;
+    background-color: #AB1926;
+    color:#ffffff;
+    position: absolute;
+    padding: 0.75rem;
+    width: 180px;
+    left: 240px;
+    border:none;
+    top: 380px;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow: gray;
+}
+
+#item-parrafo-1{
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    left: 240px;
+    font-weight: 300;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    color:cornflowerblue;
+}
+
+#item-parrafo-h3{
+    display: inline-block;
+    position: absolute;
+    color: cornflowerblue;
+    background-color: antiquewhite;
+    top: 250px;
+    left:240px;
+    font-size: 31px;
+    padding: 1.8px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+
+}
+
+#p-lote{
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    color:#AB1926;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    font-weight: bold;
+    font-size: 25px; 
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+#p-sin-inicial{
+    position: absolute;
+    top: 270px;
+    left: 120px;
+    color:#AB1926;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    font-weight: bold;
+    font-size: 25px; 
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+#app{
+    position: absolute;
+    top:190px;
+    left:120px;
+    color:#AB1926;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+

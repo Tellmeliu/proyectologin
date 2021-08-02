@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista</title>
+    <link rel="stylesheet" href="entre.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="index.js"></script>
+</head>
+<style>
+    .carousel-inner > .item > img {
+        width: 80%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .carousel-indicators li{
+        background-color: #f1910f;
+        border: 0;
+    }
+    .carousel-indicators .active{
+        background-color: #AB1926;
+        border: 0;
+    }
+    </style>
+
+<body>
+   <div class="principal"> 
+        <div class="container">
+            <br>
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1" ></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner" role="listbox">
+                
+                        <div class="item active">
+                            <img src="cars/inesperado.png" width="450" height="340">    
+                            <div class="carousel-caption">
+                                <!--<h3>Car 1</h3>
+                                <p>Description 1</p>-->
+                            </div>
+                        </div>
+                
+                        <div class="item">
+                            <img src="cars/inesperado4.png" width="450" height="340">
+                            <!--p></p>
+                            <p>con tu lote propio</p>
+                            <p>¡sin inicial!</p-->
+                            <span id="app"></span>
+                            <p id="p-lote">con tu lote propio</p>
+                            <p id="p-sin-inicial" >¡sin inicial!</p>
+                            <p id="espacio"> </p>
+                            <!--br-->
+                            <button id="intencion" onclick="alert('Hello world!')">Descubre tu Proyecto</button>
+                            <div class="carousel-caption">
+                                <!--<h3>Car 2</h3>
+                                <p>Description 2</p>-->
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                            <p id="item-parrafo-1"> PROYECTO </p>
+                            <h3 id="item-parrafo-h3">Condominio Montemar</h3>
+                            <img src="cars/inesperado3.png" width="450" height="340">
+                            <button id="intencion-1" onclick="alert('Hello world!')">Conoce más</button>
+                            <div class="carousel-caption">
+                                <!--<h3>Car 3</h3>
+                                <p>Description 3</p>-->
+                            </div>
+                        </div>
+                    
+                    </div>
+                       
+                </div>
+                <div class="formulario-total">
+                    <form class="formulario">  
+                        <div class="form-group">
+                            <h2>Encuentra tu lote ideal</h2>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="nombre" name="nombre" class="form-control" autocomplete="off" placeholder="Nombre" onkeypress="return Sololetras(event);" style="color:white" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="apellido" name="apellido" class="form-control" autocomplete="off" placeholder="Apellidos" onkeypress="return Sololetras(event);" style="color:white" required> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Correo Electronico" style="color:white" required>
+                        </div>
+                        
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <select name="dropdown" id="role" class="form-control"required>
+                                    <option disabled selected value >Documento</option>
+                                    <option value="DNI">DNI</option>
+                                    <option value="carextran">CAREXTRAN</option>
+                                    <option value="pasaporte">Pasaporte</option>
+                                    <option value="PTP">P.T.P</option>
+                                </select>   
+                            </div>
+            
+                            <div class="form-group">
+                                <input type="number" id="number" name="number" class="form-control" placeholder="No. Documento" style="color:white" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="phone" name="phone" class="form-control" placeholder="Telefono" style="color:white" required>                
+                        </div>
+        
+                        <div class="form-group">
+                            <select name="dropdown-1" id="role-1" class="form-control" required>
+                                <option disabled selected value>¿Dónde quieres vivir?</option>
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                                <option value="opcion3">Opción 3</option>
+                            </select>  
+                        </div>
+        
+                        <div class="form-group">
+                            <label><input name="prefer" id="checkbox-1" value="additional-courses" type="checkbox" class="input-checkbox">He leído y acepto las Términos y Condiciones.(obligatorio).</label>
+                        </div>
+        
+                        <div class="form-group">
+                            <button id="submit" class="submit-button" onclick="verificar()">Enviar</button>
+                        </div>    
+                    </form>
+                </div>
+        
+            </div>
+    
+       
+    </div>
+    <script>
+         function Sololetras(e){
+            key=e.keyCode || e.which;
+            tecla=String.fromCharCode(key).toString();
+            letras="ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnñopqrstuvwxyzáéíóú";
+            especiales=[0,13];
+            tecla_especial=false;
+            for (var i in especiales){
+                if(key ==especiales[i]){
+                    tecla_especial=true;
+                    break;
+                }
+            }
+            if(letras.indexOf(tecla) == -1 && !tecla_especial){
+                alert("ingrese solo letras");
+                return false;
+            }
+        }
+
+    </script>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+        typewriter
+            .typeString('Ten la independencia que sueñas')
+            .pauseFor(300)
+            .deleteChars(32)
+            .typeString('Consigue el espacio que sueñas')
+            .pauseFor(300)
+            .deleteChars(30)
+            .typeString('Asegura el futuro de tu familia')
+            .pauseFor(300)
+            .start();
+</script>
+
+
+<script>
+
+
+
+function verificar(){
+
+    rol= document.getElementById('role');
+
+    arco=rol.value;
+
+    nrodoc=document.getElementById('number');
+    doco=nrodoc.value;
+    
+    if(arco=='DNI'){
+        
+        if(doco.length==8){
+            
+        }
+        else{
+            alert("Ingrese bien el Número del DNI");
+        }
+    }
+    else if(arco == 'carextran'){
+        if(doco.length==16){
+            }
+        else{
+            alert("Ingrese bien el Número del Carnet");
+            }
+    }
+    else if (arco =='PTP'){
+        if(doco.length==11){
+            }
+        else{
+            alert("Ingrese bien el Número del PTP");
+            }
+    }
+    else if (arco =='pasaporte'){
+        if(doco.length==16){
+            }
+        else{
+            alert("Ingrese bien el Número del pasaporte");
+        }
+    }
+
+
+    numero=document.getElementById('phone');
+    mi=numero.value;
+
+    if(mi[0]==9 && mi.length==9){
+        //alert('Bien ahi');
+    }
+    else{
+        alert("Inserte los datos");
+    }
+    
+    if (document.getElementById('checkbox-1').checked){
+    }
+    else{
+        alert("No está aceptando los términos y condiciones");
+    }
+
+    document.querySelector('#submit')
+        .addEventListener('click', () => {
+            window.location.href='https://www.manya.com/';
+        });
+
+}
+
+    //document.querySelector('#submit')
+    //    .addEventListener('click', () => {
+    //        window.location.href='https://www.manya.com/';
+    //    });
+
+</script>
+<script>
+     
+</script>
+</body>
+</html>
